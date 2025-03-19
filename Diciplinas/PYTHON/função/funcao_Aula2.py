@@ -254,7 +254,10 @@ lista 1 e lista 2. Ou seja, a lista 1 e 2 devem conter conter 3 valores.
 E em seguida crie uma função para elevar ao quadrado (a**2),
 multiplicar a * b e apresente os dois resultados em duas listaas diferentes"""
 
+# Importando propiedade para multiplicação de uma lista
+from math import prod
 
+# Função para definir os valores da lista
 def valores_lista():
     lista1 = []
     lista2 = []
@@ -268,7 +271,7 @@ def valores_lista():
 
     return lista1, lista2
 
- 
+# Função para elevar ao quadrado cada elemento individualmente da lista
 
 def indice_ao_quadrado():
     lista1, lista2 = valores_lista()
@@ -280,10 +283,22 @@ def indice_ao_quadrado():
         resultado_lista2.append(lista2[i]**2)
     return resultado_lista1, resultado_lista2
 
-indice_ao_quadrado()
+# Função para multiplicar os resultados de cada lista
 
+def multiplicacao_quadrado():
+    lista1, lista2 = indice_ao_quadrado()
+    mult_lista1 = []
+    mult_lista2 = []
 
+    for i in range(len(lista1)):
+        mult_lista1.append(prod(lista1))
+        mult_lista2.append(prod(lista2))
+    return mult_lista1, mult_lista2
 
+lista1, lista2 = multiplicacao_quadrado()
+
+print(f'O valor da primeira lista é {lista1[0]}')
+print(f'O valor da segunda lista é {lista2[1]}')
 
 
 
