@@ -1,0 +1,65 @@
+---------------
+13/02/2025
+Python
+1° Aula
+Prof° Francisco
+---------------
+-->Conteúdo 2° sem<--
+
+->Conjunto 
+->Dicionários
+->Tabelas de memória 
+->Arquivos 
+->Manipulação de texto e arquivo CSV
+
+*Obs: As notas do 2° sem terão 60% da nota anual
+---------------
+--> 3° sem <--
+
+-> Banco de dados - (Dbeaver)
+---------------
+--> 4° sem <--
+->Machine learning
+->Inteligência Artificial
+->Modelagem de dados
+---------------
+---------------
+Hoje usaremos o Spyder para a revisão
+-->Vantagens:
+	-->Variable Explorer
+	-->Muito parecido com o matlab
+
+Conteúdo revisado em python:
+	-Estrutura de entrada e sáida
+	-Estrutura de condição
+---------------
+Ex 4: Crie um algoritmo que imprima a mensagem adolescente, adulto-jovem,
+meia-idade ou idoso seguindo as faixas de idade:
+Criança
+
+Ex 7: - Estrutura com listas
+---------------
+Estrutura de loop
+
+break = serve para parar um laço de repetição
+continue = vai para o próximo
+
+Ex: em uma estrutura de condição usando lista
+
+lista = [10, 20, 30]
+
+condição é igual ao 20?
+	break
+	--> O break vai parar quando a condição for verdadeira, logo o loop não ira percorrer toda a lista 
+
+---------------
+-->>Repertório<<--
+
+->Dbeaver - É uma ferramenta para gerenciar banco de dados - Usado mais na engenharia de dados
+	-->Nessa área geralmente não se usa python
+->Modelagem de dados - Área de atuação do professor 
+
+->Acompanhar o mercado de trabalho de tecnologia - Fazer isso pelo Linkedin e procurar as ferramentas utilizadas
+	-->Sempre ver o quão forte está a área de tecnologia
+->Matlab - É uma ferramenta muito poderosa porém ela é paga
+	-->O ambiente de desenvolvimento também apresenta as variáveis
