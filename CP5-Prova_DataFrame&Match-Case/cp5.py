@@ -20,7 +20,7 @@ match nota:
         print("Nota perfeita!")
     case _:
         print("Opção inválida")
-        
+
         # %%
 
 """
@@ -49,3 +49,44 @@ match cargo:
     
     case _:
       print("Cargo não encontrado")
+
+# %%
+"""
+5. Crie um programa que recebe informações nas colunas de temperatura, processo e velocidade de operação e retorne a média entre temperatura e processo em uma nova coluna chamada média,
+além da classificação da rotação com base na velocidade. 
+Utilize uma estrutura para classificar a rotação da seguinte forma:
+
+Se a velocidade for entre 1000 e 1099, a rotação será "Baixa".
+Se a velocidade for entre 1100 e 1199, a rotação será "Média".
+Se a velocidade for entre 1200 e 1299, a rotação será "Média/Alta".
+Se a velocidade for acima de 1300, a rotação será "Alta".
+
+O programa deve gerar um DataFrame com os dados originais, a média entre temperatura e processo, e a classificação da rotação.
+
+"""
+
+import pandas as pd
+ 
+dados = {
+     'temperatura': [25, 28, 32, 24, 39] ,
+     'processo': [10,12,10,15,18],
+     'velocidade': [1000, 1100, 1200, 1200, 1400]
+}
+
+df = pd.DataFrame(dados)
+
+for index, row in df.iterrows():
+  df.at[index, 'media'] = (row['temperatura'] + row['processo']) /2
+  
+for index, row in df.iterrows():
+  if 1000 <= row['velocidade'] < 1100:
+    df.at[index, 'Rotacao'] = 'Baixa'
+  elif 1100 <= row['velocidade'] < 1200:
+    df.at[index, 'Rotacao'] = 'Media'
+  elif 1200 <= row['velocidade'] < 1300:
+    df.at[index, 'Rotacao'] = 'Media/alta'
+  elif row['velocidade'] > 1300:
+    df.at[index, 'Rotacao'] = 'Alta'
+ 
+df
+print(df)
