@@ -96,3 +96,34 @@ for index, row in df.iterrows():
  
 df
 print(df)
+
+# %%
+"""
+6.Utilizando os dados do dataframe sobre falhas em máquinas, crie uma estrutura a qual seja possível alterar as informações da coluna Tipo:
+Tipo L - Mudar para LargeTipo; M - Mudar para MainTipo; H - Mudar para Hour
+Crie uma nova coluna para mostrar estas alterações.
+"""
+
+
+import pandas as pd
+
+dados = {
+    'Maquina': ['Tipo 1', 'Tipo 2', 'Tipo 3', 'Tipo 4'],
+    'Tipo': ["L", "M", "H",'P' ]
+    }
+
+df = pd.DataFrame(dados)
+
+for index, row in df.iterrows():
+    match row['Tipo']:
+        case 'L':
+            df.at[index, 'Tipo alterado'] = "LargeTipo"
+        case 'M':
+            df.at[index, 'Tipo alterado'] = 'MainTipo'
+        case 'H':
+            df.at[index, 'Tipo alterado'] = 'Hour'
+        case _:
+            df.at[index, 'Tipo alterado'] = 'Não definido'
+
+df
+print(df)
