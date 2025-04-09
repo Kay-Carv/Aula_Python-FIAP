@@ -1,3 +1,9 @@
+"""
+Avaliação de Python - FIAP - 09/04/2025
+Prof° Francisco                
+Nome: Kayque Carvalho
+"""
+
 # %%
 """
 1.Crie um programa que receba a nota de um aluno (de 0 a 10) e classifique a performance dele conforme os seguintes critérios:
