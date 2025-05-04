@@ -8,7 +8,12 @@ Esse repositório tem como **objetivo ser usado para armazenar os conteúdos e a
 
 ## Tecnologias usadas
 
-- **IDE** = Spyder
-- Linguagem = **Python**
+- **IDEs utilizadas** = [Spyder](https://www.spyder-ide.org/), [VS Code](https://code.visualstudio.com/), [Google Colab](https://colab.google/)
+- Linguagem de programação = **Python**
 
+## Links
+Veja também o repositório com o **curso de Python Development** da FIAP que eu fiz: [Clique aqui](https://github.com/Kay-Carv/Nano-Course-Python.git) 
+
+
+-------
 _**Lembrete:**_ Em alguns arquivos foram utilizadas células com ``# %%``, para evitar a execução do código inteiro de uma só vez, **recomendo rodar apenas a célula desejada.**
